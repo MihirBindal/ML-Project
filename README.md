@@ -80,16 +80,16 @@ We trained the following models on the dataset:
 We tuned the XGBoost model using a reduced grid to optimize for runtime and reproducibility. The best cross-validation accuracy was approximately `0.903`, and the final test accuracy reached `0.911`.
 
 **Best Parameters**:
-- `n_estimators`: 1032
-- `max_depth`: 7
-- `min_child_weight`: 5
+- `n_estimators`: 341
+- `max_depth`: 6
+- `min_child_weight`: 6
 - `max_leaves`: 31
-- `learning_rate`: 0.0164
-- `gamma`: 1.0935
-- `reg_lambda`: 2.25
-- `reg_alpha`: 0.0259
-- `subsample`: 0.7105
-- `colsample_bytree`: 0.572
+- `learning_rate`: 0.15146623204792237
+- `gamma`: 0.8984269085312633
+- `reg_lambda`: 1.8103178154891286
+- `reg_alpha`: 0.5094700279264034
+- `subsample`: 0.7233049318041043
+- `colsample_bytree`: 0.6395323609965953
 
 ## Results and Discussion
 
@@ -101,7 +101,7 @@ We tuned the XGBoost model using a reduced grid to optimize for runtime and repr
 | Decision Tree        | 0.849         |
 | Random Forest        | 0.895         |
 | XGBoost (default)    | 0.903         |
-| XGBoost (tuned)      | 0.911         |
+| XGBoost (tuned)      | 0.937         |
 
 ### Confusion Matrix
 
